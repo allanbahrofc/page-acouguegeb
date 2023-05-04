@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Açougue G & B</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: #eee;
+        }
+
+        body::-webkit-scrollbar {
+            width: 5px;
+            /* width of the entire scrollbar */
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #051225;
+            /* color of the tracking area */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #303030;
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+        }
+
+        .header {
+            width: 100vw;
+            height: 100vh;
+            background-color: #051225;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .logo {
+            position: relative;
+            top: -5px;
+            width: 80%;
+        }
+
+        .products-view {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #aaa;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @media screen and (max-width:500px) {
+            .header {
+                width: 100vw;
+                height: 110vh;
+            }
+
+            .logo {
+                width: 150vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="./res/cor branca.png" />
+    </header>
+    <div class="products-view">
+        <div class="product">
+            <img alt="" />
+            <h2>Title</h2>
+            <p> Description</p>
+        </div>
+        <div class="product">
+            <img alt="" />
+            <h2>Title</h2>
+            <p> Description</p>
+        </div>
+        <div class="product">
+            <img alt="" />
+            <h2>Title</h2>
+            <p> Description</p>
+        </div>
+        <div class="product">
+            <img alt="" />
+            <h2>Title</h2>
+            <p> Description</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
