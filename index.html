@@ -64,51 +64,77 @@
             padding: 5px;
             margin: 5px;
         }
-        header img{
+
+        header img {
             position: relative;
             top: 24px;
 
         }
-        i{
+
+        i {
             color: #777777
         }
-        header a{
+
+        header a {
             border: 1px solid transparent;
             padding: 15px;
             border-radius: 5px;
         }
-        header a:hover{
+
+        header a:hover {
             border: 1px solid #ccc;
         }
-        .side-bar{
+
+        .side-bar {
             z-index: -1;
-            top: 20px;
+            top: 66px;
             width: 18.3vw;
             height: 100vh;
-            position: fixed;
+            position:fixed;
             background-color: #eee;
             border-right: 1px solid #ccc;
         }
-        .side{
+
+        .side {
             background-color: #fff;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .side ul{
+
+        .side ul {
             width: 100%;
             list-style: none;
         }
-        .side li{
+
+        .side li {
             padding: 15px;
             border-bottom: 1px solid #ccc;
             cursor: pointer;
             font-weight: 500;
         }
-        .side li:hover{
+
+        .side li:hover {
             background-color: #c5c5c5;
             font-weight: 700;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+        background-color: #fff;
+        padding: 15px;
         }
     </style>
 </head>
@@ -118,7 +144,7 @@
         <img src="./res/logo amadeirado.png" width="250px">
         <div>
             <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-            <input type="text" placeholder="carne de panela ou carne para churrasco" class="search" />
+            <input type="text" placeholder="carne de panela ou carne para churrasco..." class="search" />
         </div>
         <nav>
             <ul>
@@ -131,16 +157,29 @@
     <div class="side-bar">
         <div class="side">
             <ul>
-                <li>Carnes de Porco</li>
-                <li>Carnes de Rês</li>
-                <li>Frango e derivados</li>
-                <li>Linguiças</li>
-                <li>Salsichões</li>
-                <li>Bebidas</li>
-                <li>Derivados</li>
+                <div class="items">
+                    <li>Carnes de Porco</li>
+                    <li>Carnes de Rês</li>
+                    <li>Frango e derivados</li>
+                    <li>Linguiças</li>
+                    <li>Salsichões</li>
+                    <li>Bebidas</li>
+                    <li>Derivados</li>
+                    <li>Promoções</li>
+                    <li>Campanha</li>
+                </div>
             </ul>
         </div>
     </div>
+    <main class="content">
+        <div class="grid">
+            <div class="item">
+                <h2> Paleta Suína</h2>
+                <p> 19,50R$/kg</p>
+                <button>+ Carrinho</button>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
