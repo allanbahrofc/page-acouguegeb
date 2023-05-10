@@ -23,6 +23,7 @@
         }
 
         header {
+            z-index: 0;
             position: fixed;
             display: flex;
             flex-direction: row;
@@ -86,11 +87,11 @@
         }
 
         .side-bar {
-            z-index: -1;
+            z-index: 0;
             top: 66px;
             width: 18.3vw;
             height: 100vh;
-            position:fixed;
+            position: fixed;
             background-color: #eee;
             border-right: 1px solid #ccc;
         }
@@ -119,22 +120,25 @@
             background-color: #c5c5c5;
             font-weight: 700;
         }
-        .content{
+
+        .content {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100vw;
             height: 100vh;
         }
-        .grid{
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             align-items: center;
         }
-        .item{
-        background-color: #fff;
-        padding: 15px;
+
+        .item {
+            background-color: #fff;
+            padding: 15px;
         }
     </style>
 </head>
