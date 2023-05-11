@@ -109,7 +109,7 @@
             list-style: none;
         }
 
-        .side li {
+        .side .side-item {
             padding: 15px;
             border-bottom: 1px solid #ccc;
             cursor: pointer;
@@ -131,12 +131,14 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             justify-content: center;
             align-items: center;
+            margin: auto;
         }
 
-        .item {
+        .grid-item {
+            margin: 30px;
             background-color: #fff;
             padding: 15px;
         }
@@ -161,23 +163,38 @@
     <div class="side-bar">
         <div class="side">
             <ul>
-                <div class="items">
-                    <li>Carnes de Porco</li>
-                    <li>Carnes de Rês</li>
-                    <li>Frango e derivados</li>
-                    <li>Linguiças</li>
-                    <li>Salsichões</li>
-                    <li>Bebidas</li>
-                    <li>Derivados</li>
-                    <li>Promoções</li>
-                    <li>Campanha</li>
+                <div class="side-items">
+                    <li class="side-item">Carnes de Porco</li>
+                    <li class="side-item">Carnes de Rês</li>
+                    <li class="side-item">Frango e derivados</li>
+                    <li class="side-item">Linguiças</li>
+                    <li class="side-item">Salsichões</li>
+                    <li class="side-item">Bebidas</li>
+                    <li class="side-item">Derivados</li>
+                    <li class="side-item">Promoções</li>
+                    <li class="side-item">Campanha</li>
                 </div>
             </ul>
         </div>
     </div>
     <main class="content">
         <div class="grid">
-            <div class="item">
+            <div class="grid-item">
+                <h2> Paleta Suína</h2>
+                <p> 19,50R$/kg</p>
+                <button>+ Carrinho</button>
+            </div>
+            <div class="grid-item">
+                <h2> Paleta Suína</h2>
+                <p> 19,50R$/kg</p>
+                <button>+ Carrinho</button>
+            </div>
+            <div class="grid-item">
+                <h2> Paleta Suína</h2>
+                <p> 19,50R$/kg</p>
+                <button>+ Carrinho</button>
+            </div>
+            <div class="grid-item">
                 <h2> Paleta Suína</h2>
                 <p> 19,50R$/kg</p>
                 <button>+ Carrinho</button>
