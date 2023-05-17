@@ -59,11 +59,16 @@ header div label {
 header img {
     position: relative;
     top: 24px;
+}
 
+li i {
+    font-size: 20px;
+    color: #2e2e2e
 }
 
 i {
-    color: #777777
+    font-size: 20px;
+    color: #2e2e2e
 }
 
 header a {
@@ -74,6 +79,7 @@ header a {
 
 header a:hover {
     border: 1px solid #ccc;
+    color: #000;
 }
 
 .side-bar {
@@ -150,9 +156,7 @@ header a:hover {
     border: 1px solid #dbdbdb;
     border-radius: 5px;
 }
-i{
-    font-size: 20px;
-}
-a{
+
+a {
     text-decoration: none;
 }
