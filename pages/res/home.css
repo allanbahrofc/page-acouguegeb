@@ -150,3 +150,9 @@ header a:hover {
     border: 1px solid #dbdbdb;
     border-radius: 5px;
 }
+i{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
