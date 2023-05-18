@@ -10,6 +10,8 @@
 
 body {
     background-color: #eee;
+    overflow-x: hidden;
+
 }
 
 header {
@@ -83,7 +85,7 @@ header a:hover {
 }
 
 .side-bar {
-    z-index: 0;
+    z-index: 1;
     top: 66px;
     width: 18.3vw;
     height: 100vh;
@@ -145,18 +147,23 @@ header a:hover {
     height: 40vh;
     display: flex;
     top: 120px;
-    margin: auto;
+    flex-direction: column;
     justify-content: center;
-    z-index: -1;
+    align-items: center;
+    z-index: 0;
+    text-align: left;
 
 }
 
 .holder-image img {
-    width: 400px;
+    width: 500px;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
 }
-
+.holder-image h2{
+    position: relative;
+    left: 0;
+}
 a {
     text-decoration: none;
 }
