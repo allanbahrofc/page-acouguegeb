@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -47,8 +47,8 @@ header div input {
     width: 40vw;
     height: 5vh;
     border: 1px solid #ccc;
-    border-radius: 45px;
-    padding: 5px;
+    border-radius: 3px;
+    padding: 10px;
     padding-left: 12px;
 }
 
@@ -120,16 +120,18 @@ header a:hover {
 }
 
 .content {
+    position: relative;
+    top: -40px;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
 .grid {
+    z-index: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -138,13 +140,17 @@ header a:hover {
 .grid-item {
     margin: 30px;
     background-color: #fff;
-    padding: 15px;
+    padding: 25px;
+    border: 1px solid #bebebe;
+    border-radius: 2px;
+    width: 250px;
+    height: 250px;
 }
 
 .holder-image {
     position: relative;
     width: 100vw;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     top: 120px;
     flex-direction: column;
@@ -156,14 +162,75 @@ header a:hover {
 }
 
 .holder-image img {
-    width: 500px;
+    width: 600px;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
 }
-.holder-image h2{
+
+.holder-image p {
     position: relative;
-    left: 0;
+    display: flex;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e2e2e;
 }
+
+.side-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+.side-description .side-description-title {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.side-description .side-description-desc {
+    font-size: 12px;
+    padding: 5px;
+
+}
+
 a {
     text-decoration: none;
+}
+
+.content-behavior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    flex-direction: column;
+}
+
+.content-behavior .category ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.content-behavior .category li {
+    margin: 10px;
+    list-style: none;
+    font-size: 14px;
+    padding: 12px;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.content-behavior .category li:hover {
+    background-color: #2e2e2e;
+    color: #fff;
 }
