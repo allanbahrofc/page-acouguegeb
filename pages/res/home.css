@@ -220,19 +220,32 @@ a {
 
 }
 
-.content-behavior .category li {
+.content-behavior .category .category-item, .category-item-selected {
     margin: 10px;
     list-style: none;
     font-size: 14px;
     padding: 12px;
-    color: #2e2e2e;
     border: 1px solid #2e2e2e;
     border-radius: 5px;
     cursor: pointer;
 
 }
+.category-item:hover{
+    background-color: #2e2e2e;
+    color: #fff;
 
-.content-behavior .category li:hover {
+}
+.selected{
+    background-color: #2e2e2e;
+    color: #fff;
+
+}
+.credits{
+    color: #2e2e2e;
+    font-size: 14px;
+}
+
+.category-item-selected {
     background-color: #2e2e2e;
     color: #fff;
 }
