@@ -78,6 +78,9 @@ header a {
     padding: 15px;
     border-radius: 5px;
 }
+.credits{
+    padding: 5px;
+}
 
 header a:hover {
     border: 1px solid #ccc;
@@ -87,7 +90,7 @@ header a:hover {
 .side-bar {
     z-index: 1;
     top: 66px;
-    width: 18.3vw;
+    width: 19vw;
     height: 100vh;
     position: fixed;
     background-color: #eee;
@@ -122,6 +125,7 @@ header a:hover {
 .content {
     position: relative;
     top: -40px;
+    left: 80px;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -248,4 +252,7 @@ a {
 .category-item-selected {
     background-color: #2e2e2e;
     color: #fff;
+}
+img{
+    border-radius: 4px;
 }
