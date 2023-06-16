@@ -89,8 +89,8 @@ header a:hover {
 
 .side-bar {
     z-index: 1;
-    top: 66px;
-    width: 19vw;
+    top: 60px;
+    width: 18.4vw;
     height: 100vh;
     position: fixed;
     background-color: #eee;
@@ -255,4 +255,10 @@ a {
 }
 img{
     border-radius: 4px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a7a7a7;
+    color: #000;
 }
