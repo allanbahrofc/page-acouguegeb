@@ -81,6 +81,8 @@ header a {
 
 header a:hover {
     color: #acaaaa;
+    background-color: #a7a7a7;
+
 }
 
 .content {
@@ -239,5 +241,5 @@ ul {
     list-style: none;
 }
 .content-nav-item:hover{
-    color: #1f1030;
+    background-color: #a7a7a7;
 }
