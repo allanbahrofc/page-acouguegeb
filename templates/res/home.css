@@ -78,29 +78,13 @@ header a {
     padding: 15px;
     border-radius: 5px;
 }
-.credits{
-    padding: 5px;
-}
 
 header a:hover {
-    border: 1px solid #ccc;
-    color: #000;
+    color: #acaaaa;
 }
-
-.side-bar {
-    z-index: 1;
-    top: 60px;
-    width: 18.4vw;
-    height: 100vh;
-    position: fixed;
-    background-color: #eee;
-    border-right: 1px solid #ccc;
-}
-
 
 .content {
     position: relative;
-    top: -40px;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -110,7 +94,7 @@ header a:hover {
 .grid {
     z-index: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -157,27 +141,6 @@ header a:hover {
     color: #2e2e2e;
 }
 
-.side-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20vh;
-    text-align: center;
-}
-
-.side-description .side-description-title {
-    font-size: 18px;
-    padding: 5px;
-}
-
-.side-description .side-description-desc {
-    font-size: 12px;
-    padding: 5px;
-
-}
-
 a {
     text-decoration: none;
 }
@@ -199,7 +162,8 @@ a {
 
 }
 
-.content-behavior .category .category-item, .category-item-selected {
+.content-behavior .category .category-item,
+.category-item-selected {
     margin: 10px;
     list-style: none;
     font-size: 14px;
@@ -209,17 +173,20 @@ a {
     cursor: pointer;
 
 }
-.category-item:hover{
+
+.category-item:hover {
     background-color: #2e2e2e;
     color: #fff;
 
 }
-.selected{
+
+.selected {
     background-color: #2e2e2e;
     color: #fff;
 
 }
-.credits{
+
+.credits {
     color: #2e2e2e;
     font-size: 14px;
 }
@@ -228,19 +195,49 @@ a {
     background-color: #2e2e2e;
     color: #fff;
 }
-img{
+
+img {
     border-radius: 5px;
 }
-button{
+
+button {
     width: 100%;
     padding: 10px;
     border: 1px solid #a7a7a7;
     color: #000;
 }
-.p-stock{
+
+.p-stock {
     font-weight: bold;
     font-size: 12px;
     margin-top: 2px;
     margin-bottom: 5px;
     color: #ff3d2f;
+}
+
+.content-nav,
+.content-nav ul {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-nav li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.content-nav-market{
+    border: 1px solid #bdbdbd;
+}
+
+ul {
+    list-style: none;
+}
+.content-nav-item:hover{
+    color: #1f1030;
 }
