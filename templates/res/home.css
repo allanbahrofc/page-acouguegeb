@@ -219,7 +219,8 @@ button {
 
 .content-nav,
 .content-nav ul {
-    justify-content: space-between;
+    width: 100%;
+    justify-content: right;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -233,13 +234,27 @@ button {
     cursor: pointer;
     padding: 5px;
 }
-.content-nav-market{
+
+.content-nav-market {
     border: 1px solid #bdbdbd;
 }
 
 ul {
     list-style: none;
 }
-.content-nav-item:hover{
+
+.content-nav-item:hover {
     background-color: #a7a7a7;
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+    .content-nav{
+        display: none;
+    }
+    header{
+        height: 12vh;
+    }
 }
